@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>r/Argentina programa | Intro a JavaScript | Tarea Clase 3</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="formulario">
+        <form>
+            <h3>Tarea Clase 3</h3>
+            <br>
+            <div class="calculo-formulario">
+                <label for="nombre-usuario">• Ingresá tu nombre:</label>
+                <input type="text" name="nombreUsuario" id="nombre-usuario" required placeholder="Nombre" />
+                <br>
+                <label for="edad-usuario">• Ingresá tu edad:</label>
+                <input type="number" name="edadUsuario" id="edad-usuario" min="0" value="0" required />
+                <br>
+                <label for="documento-usuario">• ¿Tenes tu documento?:</label>
+                <br><br>
+                <div class="operadores">
+                    <label class="container">
+                        <input type="radio" name="respuestDocumento" id="respuesta-si" checked="checked">
+                        <span class="checkmark">Si</span>
+                    </label>
+                    <label class="container">
+                        <input type="radio" name="respuestDocumento" id="respuesta-no">
+                        <span class="checkmark">No</span>
+                    </label>
+                </div>
+                <br><br><br>
+                <div class="botones">
+                    <button type="button" id="ingresar" class="button"><span>Ingresar</span></button>
+                    <button type="reset" id="reset" class="button">Reiniciar</button></div>
+            </div>
+            <div id="resultado">
+                <div id="resultado-nombre"></div><br>
+                <div id="resultado-edad"></div><br>
+                <div id="resultado-documento"></div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <footer>Nacho Caiafa</footer>
+    </div>
+    <script src="tarea-clase-3-mio.js"></script>
+</body>
+
+</html>

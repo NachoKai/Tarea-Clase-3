@@ -1,0 +1,221 @@
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+
+}
+
+body,
+label,
+button {
+    color: #000000;
+}
+
+.formulario {
+    display: flex;
+    height: 97.7vh;
+    background-color: #2a333d;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgb(230, 220, 243);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 0;
+    font-size: 0.9rem;
+    color: #252525;
+    margin-bottom: 0.2rem;
+}
+
+input {
+    width: 160px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(230, 220, 243);
+    margin-bottom: 1rem;
+}
+
+button {
+    font-size: 15px;
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.button {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 150%;
+    background: rgb(221, 135, 54);
+}
+
+.button:hover {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 150%;
+    background: rgb(224, 112, 6);
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 10px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 1;
+}
+
+.ocultar {
+    display: none;
+}
+
+.resultado {
+    font-weight: 700;
+}
+
+.footer {
+    background: #2a333d;
+    color: #ffffff;
+    text-align: center;
+}
+
+.error {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-size: 18px;
+    width: 350px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(202, 60, 60);
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 180%;
+}
+
+.valido {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    font-size: 18px;
+    width: 350px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(28, 184, 65);
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 180%;
+}
+
+.botones {
+    text-align: center;
+}
+
+.operadores {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Label del contenedor */
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    line-height: 180%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Esconder icono predeterminado */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Crea icono personalizado */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* Se oscurece en hover */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* Cuando esta checked */
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+    color: #ffffff;
+    font-weight: 900;
+    border-radius: 5px;
+}
