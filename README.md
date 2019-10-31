@@ -10,6 +10,6 @@ ____________________________________
 # Name, age, document and bar entrance.
 r/argentina programa
   
-### [Enter](https://nachokai.github.io/Tarea-Clase-3/)
+## [Enter](https://nachokai.github.io/Tarea-Clase-3/)
 
 ### Based on an introductory JavaScript workshop for beginners: https://github.com/muses-code-js/js-intro-workshop, by MusesCodeJS and her author Tanya Butenko.
