@@ -7,7 +7,7 @@ r/argentina programa
 
 ____________________________________
 
-# Age and Salary Calculator
+# Name, age, document and bar entrance.
 r/argentina programa
   
 ### [Enter](https://nachokai.github.io/Tarea-Clase-3/)
