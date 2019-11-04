@@ -1,5 +1,5 @@
 # Nombre, edad, documento y entrada al bar.
-r/argentina programa
+r/argentina Programa por Fabricio Sodano
   
 ## [Entrar](https://nachokai.github.io/Tarea-Clase-3/)  
 
@@ -8,7 +8,7 @@ r/argentina programa
 ____________________________________
 
 # Name, age, document and bar entrance.
-r/argentina programa
+r/argentina Programa by Fabricio Sodano
   
 ## [Enter](https://nachokai.github.io/Tarea-Clase-3/)
 
