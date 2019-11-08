@@ -72,6 +72,7 @@ button:focus {
 }
 
 .button {
+    height: 40px;
     display: inline-block;
     align-self: center;
     text-align: center;
@@ -82,6 +83,10 @@ button:focus {
     color: #ffffff;
     line-height: 150%;
     background: rgb(221, 135, 54);
+}
+
+button:active {
+    height: 37px;
 }
 
 .button:hover {
