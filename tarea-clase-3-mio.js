@@ -90,6 +90,4 @@ document.querySelector('#ingresar').onclick = function () {
     calculoDocumento()
 }
 
-document.querySelector('#reset').onclick = function () {
-    reiniciarResultado()
-}
+document.querySelector('#reset').onclick = () => reiniciarResultado()
