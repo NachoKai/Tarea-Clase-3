@@ -7,10 +7,10 @@ function calculoNombre() {
   const nombresMayusUsuario = nombreUsuario.charAt(0).toUpperCase() + nombreUsuario.slice(1);
   const nombresMayusPrimo = nombrePrimo.charAt(0).toUpperCase() + nombrePrimo.slice(1);
 
-  if (nombreUsuario === nombreYo) {
+  if (nombreUsuario.toLowerCase() === nombreYo) {
     nodoResultado.className = "valido";
     nodoResultado.innerText = `Hola, tocayo! Yo tambien me llamo ${nombresMayusUsuario}!`;
-  } else if (nombreUsuario === nombrePrimo.toLowerCase()) {
+  } else if (nombreUsuario.toLowerCase() === nombrePrimo) {
     nodoResultado.className = "valido";
     nodoResultado.innerText = `Hola ${nombresMayusPrimo}, te llamas igual que mi primo!`;
   } else if (nombreUsuario == 0) {
